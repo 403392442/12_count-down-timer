@@ -1,38 +1,98 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.count-down-container__div {
+  margin: 20px auto;
+  padding: 15px 30px;
+  width: 500px;
+  border: 2px solid orange;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color-red {
+  color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.color-green {
+  color: green;
+}
+
+.color-yellow {
+  color: orange;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+button {
+  border: 2px solid green;
+  border-radius: 10px;
+  font-size: 18px;
+  color: green;
+  background-color: transparent;
+  padding: 5px 50px;
+  box-shadow: 0 0 5px;
+}
+
+button:hover {
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.resume-button--color-yellow {
+  border: 2px solid gold;
+  color: gold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resume-button--color-yellow:hover {
+  background-color: gold;
+  color: white;
 }
+
+.set-time-input-container__div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.set-time-input-container__div p{
+  margin: 5px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.set-time-input-container__div input{
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 16px;
+  width: 150px;
+  margin-top: 10px;
+}
+
+.set-time-input-container__div input:focus{
+  outline: none;
+}
+
+.set-time-button-group__div {
+  margin: 20px;
+}
+
+.set-time-button-group__div button:nth-child(2) {
+  color: red;
+  border: 2px solid red;
+}
+
+.set-time-button-group__div button:nth-child(2):hover {
+  background-color: red;
+  color: white;
+}
+
+.set-time-button-group__div button {
+  margin: 0 20px;
+}
+
